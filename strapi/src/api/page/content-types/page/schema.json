@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "dynamic_zone": {
+      "type": "dynamiczone",
+      "components": [
+        "dynamic-zone.cta",
+        "dynamic-zone.hero"
+      ]
+    }
+  }
+}
