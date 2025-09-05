@@ -10,14 +10,13 @@ import { Subheading } from '../elements/subheading';
 export const Hero = ({
   heading,
   sub_heading,
-  CTAs,
-  locale,
+  ctas,
 }: {
   heading: string;
   sub_heading: string;
-  CTAs: any[];
-  locale: string;
+  ctas: any[];
 }) => {
+    console.log(ctas)
   return (
     <div className="h-screen overflow-hidden relative flex flex-col items-center justify-center">
       <Heading
@@ -31,12 +30,12 @@ export const Hero = ({
         {sub_heading}
       </Subheading>
       <div className="flex space-x-2 items-center mt-8">
-        {CTAs &&
-          CTAs.map((cta) => (
+        {ctas &&
+          ctas.map((cta) => (
             <Button
               key={cta?.id}
               as={Link}
-              href={`/${locale}${cta.URL}`}
+              href={cta.url}
               {...(cta.variant && { variant: cta.variant })}
             >
               {cta.text}

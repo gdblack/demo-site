@@ -17,6 +17,7 @@ interface Props {
 
 const componentMapping: { [key: string]: any } = {
   'dynamic-zone.hero': dynamic(() => import('./hero').then((mod) => mod.Hero)),
+  'dynamic-zone.cta': dynamic(() => import('./cta').then((mod) => mod.CTA)),
 
 };
 

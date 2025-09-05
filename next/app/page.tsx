@@ -14,7 +14,7 @@ export default async function Home() {
     true
   );
 
-  console.log('pageData', pageData);
+  console.dir(pageData, {depth: null});
   return (
     <>
       <PageContent pageData={pageData} />
