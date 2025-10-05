@@ -13,6 +13,16 @@ export interface DynamicZoneCta extends Struct.ComponentSchema {
   };
 }
 
+export interface DynamicZoneHeader extends Struct.ComponentSchema {
+  collectionName: 'components_dynamic_zone_headers';
+  info: {
+    displayName: 'Header';
+  };
+  attributes: {
+    text: Schema.Attribute.Blocks;
+  };
+}
+
 export interface DynamicZoneHero extends Struct.ComponentSchema {
   collectionName: 'components_dynamic_zone_heroes';
   info: {
@@ -47,6 +57,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'dynamic-zone.cta': DynamicZoneCta;
+      'dynamic-zone.header': DynamicZoneHeader;
       'dynamic-zone.hero': DynamicZoneHero;
       'shared.button': SharedButton;
     }

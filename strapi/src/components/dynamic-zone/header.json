@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_dynamic_zone_headers",
+  "info": {
+    "displayName": "Header"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}
